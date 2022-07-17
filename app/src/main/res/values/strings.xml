@@ -8,4 +8,17 @@
         \n\n- Keyword1-Keyword2 format to search for books with Keyword1 in title and without
         Keyword2 in title.
     </string>
+    <string name="dashboard">Dashboard</string>
+    <string name="profile">Profile</string>
+    <string name="favourites">Favourites</string>
+    <string name="about_app">About App</string>
+    <string name="navigation_drawer">Navigation Drawer</string>
+    <string name="open_drawer">Open Drawer</string>
+    <string name="close_drawer">Close Drawer</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="sidPrat">Sid and Prat</string>
+    <string name="it_s_levioosa_not_leviosaa">USN: 1AY19CS076 USN: 1AY19CS106 </string>
+    <string name="about_app_fragment">About App Fragment</string>
+    <string name="sample_text">The App is developed by Pratheek Shetty and Sidharth Kumar as a part of Android application lab mini project.The App consists of various features like adding books to favourites, summary about the book, sorting books based on ratings the profile of developers.</string>
 </resources>

@@ -12,16 +12,16 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         >
+
         <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/detail_view_layout"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical"
-            tools:layout_editor_absoluteX="0dp"
-            tools:layout_editor_absoluteY="0dp"
-            android:id="@+id/detail_view_layout"
-            android:visibility="invisible"
             android:paddingBottom="16dp"
-            >
+            android:visibility="invisible"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="0dp">
 
             <androidx.appcompat.widget.AppCompatImageView
                 android:id="@+id/book_image_view"
@@ -33,26 +33,26 @@
                 android:id="@+id/detail_info_layout"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
                 android:orientation="vertical"
                 tools:layout_editor_absoluteX="0dp"
-                tools:layout_editor_absoluteY="0dp"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp">
+                tools:layout_editor_absoluteY="0dp">
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:theme="@style/BookDetailInfoHeaderStyle"
-                    android:text="Title" />
+                    android:text="Title"
+                    android:theme="@style/BookDetailInfoHeaderStyle" />
 
                 <TextView
                     android:id="@+id/title_tv"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="20sp"
-                    android:textColor="@color/black_80"
-                    android:text="TextView"
                     android:layout_marginBottom="16dp"
-                    />
+                    android:text="TextView"
+                    android:textColor="@color/black_80"
+                    android:textSize="20sp" />
 
                 <androidx.appcompat.widget.LinearLayoutCompat
                     android:layout_width="match_parent"
@@ -60,22 +60,23 @@
                     android:layout_marginBottom="16dp"
 
                     >
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:theme="@style/BookDetailInfoHeaderStyle"
-                        android:layout_weight="1"
                         android:layout_gravity="center"
-                        android:text="Price" />
+                        android:layout_weight="1"
+                        android:text="Price"
+                        android:theme="@style/BookDetailInfoHeaderStyle" />
+
                     <TextView
                         android:id="@+id/price_tv"
-                        android:textColor="#b2395b"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textSize="20sp"
-                        android:layout_weight="1"
                         android:layout_gravity="center"
-                        />
+                        android:layout_weight="1"
+                        android:textColor="#b2395b"
+                        android:textSize="20sp" />
 
                 </androidx.appcompat.widget.LinearLayoutCompat>
 
@@ -83,121 +84,116 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:theme="@style/BookDetailInfoHeaderStyle"
-                    android:text="Rating" />
+                    android:text="Rating"
+                    android:theme="@style/BookDetailInfoHeaderStyle" />
 
                 <RatingBar
                     android:id="@+id/rating_bar"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:numStars="5"
-                    android:stepSize="0.1"
-                    android:isIndicator="true"
                     android:layout_marginBottom="16dp"
+                    android:isIndicator="true"
+                    android:numStars="5"
                     android:progressTint="@color/rating_bar_color"
                     android:secondaryProgressTint="@android:color/transparent"
-                    />
+                    android:stepSize="0.1" />
 
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:theme="@style/BookDetailInfoHeaderStyle"
-                    android:text="Authors" />
+                    android:text="Authors"
+                    android:theme="@style/BookDetailInfoHeaderStyle" />
 
                 <TextView
                     android:id="@+id/authors_tv"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="16dp"
-                    android:theme="@style/BookDetailInfoBodyStyle"
-                    />
+                    android:theme="@style/BookDetailInfoBodyStyle" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:theme="@style/BookDetailInfoHeaderStyle"
-                    android:text="Publishers" />
+                    android:text="Publishers"
+                    android:theme="@style/BookDetailInfoHeaderStyle" />
 
                 <TextView
                     android:id="@+id/publisher_tv"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="16dp"
-                    android:theme="@style/BookDetailInfoBodyStyle"
-                    />
+                    android:theme="@style/BookDetailInfoBodyStyle" />
 
 
                 <androidx.appcompat.widget.LinearLayoutCompat
-                    android:orientation="horizontal"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="16dp"
-                    >
+                    android:orientation="horizontal">
 
                     <androidx.appcompat.widget.LinearLayoutCompat
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:orientation="vertical"
                         android:layout_gravity="center"
+                        android:layout_weight="1"
                         android:gravity="center_vertical"
-                        android:layout_weight="1">
+                        android:orientation="vertical">
+
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:theme="@style/BookDetailInfoHeaderStyle"
-                            android:text="Language" />
+                            android:text="Language"
+                            android:theme="@style/BookDetailInfoHeaderStyle" />
 
                         <TextView
                             android:id="@+id/language_tv"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:theme="@style/BookDetailInfoBodyStyle"
-                            />
+                            android:theme="@style/BookDetailInfoBodyStyle" />
 
                     </androidx.appcompat.widget.LinearLayoutCompat>
 
                     <androidx.appcompat.widget.LinearLayoutCompat
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:orientation="vertical"
                         android:layout_gravity="center"
+                        android:layout_weight="1"
                         android:gravity="center_vertical"
-                        android:layout_weight="1">
+                        android:orientation="vertical">
+
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:theme="@style/BookDetailInfoHeaderStyle"
-                            android:text="Year" />
+                            android:text="Year"
+                            android:theme="@style/BookDetailInfoHeaderStyle" />
 
                         <TextView
                             android:id="@+id/year_tv"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:theme="@style/BookDetailInfoBodyStyle"
-                            />
+                            android:theme="@style/BookDetailInfoBodyStyle" />
                     </androidx.appcompat.widget.LinearLayoutCompat>
 
                     <androidx.appcompat.widget.LinearLayoutCompat
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:orientation="vertical"
                         android:layout_gravity="center"
+                        android:layout_weight="1"
                         android:gravity="center_vertical"
-                        android:layout_weight="1">
+                        android:orientation="vertical">
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:theme="@style/BookDetailInfoHeaderStyle"
-                            android:text="Pages" />
+                            android:text="Pages"
+                            android:theme="@style/BookDetailInfoHeaderStyle" />
 
                         <TextView
                             android:id="@+id/page_tv"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:theme="@style/BookDetailInfoBodyStyle"
-                            />
+                            android:theme="@style/BookDetailInfoBodyStyle" />
 
                     </androidx.appcompat.widget.LinearLayoutCompat>
                 </androidx.appcompat.widget.LinearLayoutCompat>
@@ -206,69 +202,65 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:theme="@style/BookDetailInfoHeaderStyle"
-                    android:text="ISBN10" />
+                    android:text="ISBN10"
+                    android:theme="@style/BookDetailInfoHeaderStyle" />
 
                 <TextView
                     android:id="@+id/isbn10_tv"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="16dp"
-                    android:theme="@style/BookDetailInfoBodyStyle"
-                    />
+                    android:theme="@style/BookDetailInfoBodyStyle" />
 
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:theme="@style/BookDetailInfoHeaderStyle"
-                    android:text="ISBN13" />
+                    android:text="ISBN13"
+                    android:theme="@style/BookDetailInfoHeaderStyle" />
 
                 <TextView
                     android:id="@+id/isbn13_tv"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="16dp"
-                    android:theme="@style/BookDetailInfoBodyStyle"
-                    />
+                    android:theme="@style/BookDetailInfoBodyStyle" />
 
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:theme="@style/BookDetailInfoHeaderStyle"
-                    android:text="Description" />
+                    android:text="Description"
+                    android:theme="@style/BookDetailInfoHeaderStyle" />
 
                 <TextView
                     android:id="@+id/desc_tv"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="16sp"
-                    android:textColor="@color/black_80"
                     android:layout_marginBottom="16dp"
-                    />
+                    android:textColor="@color/black_80"
+                    android:textSize="16sp" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:theme="@style/BookDetailInfoHeaderStyle"
-                    android:text="URL" />
+                    android:text="URL"
+                    android:theme="@style/BookDetailInfoHeaderStyle" />
 
                 <Button
                     android:id="@+id/url_btn"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:backgroundTint="@color/white"
-                    android:textColor="@color/black_80"
                     android:layout_marginBottom="16dp"
-                    />
+                    android:backgroundTint="@color/white"
+                    android:textColor="@color/black_80" />
 
                 <TextView
+                    android:id="@+id/pdf_text"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:theme="@style/BookDetailInfoHeaderStyle"
-                    android:id="@+id/pdf_text"
-                    android:text="PDF" />
+                    android:text="PDF"
+                    android:theme="@style/BookDetailInfoHeaderStyle" />
 
                 <androidx.recyclerview.widget.RecyclerView
                     android:id="@+id/book_pdf_recycler_view"
